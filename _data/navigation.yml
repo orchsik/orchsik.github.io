@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "카테고리"
+    url: /categories/
+  - title: "태그"
+    url: /tags/
+  # - title: "도서관"
+  #   url: /year-archive/
+  - title: "WHO"
+    url: "/about/"
