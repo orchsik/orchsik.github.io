@@ -36,7 +36,6 @@ typora-copy-images-to: ../images/2021-05-25
 
 
 ## 3. Buffer 어떻게 사용함?
-
 ### 1. CREATE
 ```javascript
 var buffer;
