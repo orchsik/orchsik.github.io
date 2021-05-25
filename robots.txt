@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://orchsik.github.io/sitemap.xml
