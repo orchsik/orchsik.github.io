@@ -7,7 +7,7 @@ tags: Buffer
 typora-copy-images-to: ../images/2021-05-25
 ---
 
-### 1. Buffer가 왜 필요해?
+## 1. Buffer가 왜 필요해?
 - 브라우저의 Javascript 환경이면 문자열만 가지고 놀아도 충분하지만...
 
 - 서버에서는 TCP Stream을 다루고, Filesystem을 이용해 file을 읽고 쓰는 작업이 필요하다.
@@ -22,7 +22,7 @@ typora-copy-images-to: ../images/2021-05-25
   
 
 
-### 2. Buffer가 뭐에요?
+## 2. Buffer가 뭐에요?
 - Raw Binary Data를 다루라고 Node에서 만들어줬다.
 - 정수 배열과 비슷한데 **다르다**.
   - Raw Binary Data에 특화된 메소드가 있다.
@@ -35,8 +35,8 @@ typora-copy-images-to: ../images/2021-05-25
 
 
 
-### 3. Buffer 어떻게 사용함?
-  #### 1. CREATE
+## 3. Buffer 어떻게 사용함?
+  ### 1. CREATE
   ```javascript
   var buffer;
 
@@ -58,7 +58,7 @@ typora-copy-images-to: ../images/2021-05-25
 
 
 
-  #### 2. WRITE
+  ### 2. WRITE
 
   ```javascript
   var buffer;
@@ -83,7 +83,7 @@ typora-copy-images-to: ../images/2021-05-25
   console.log(buffer.toString('utf8')); // Hello world!!!!!
   ```
 
-  #### 3. MORE
+  ### 3. MORE
   ```javascript
   var result;
   var buffer = Buffer.alloc(16);
