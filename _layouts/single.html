@@ -36,6 +36,14 @@ layout: default
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+              
+              <!-- CUSTOM: Hits -->
+              <span class="page__meta-sep"></span>
+              <span class="page__meta-readtime">
+                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url={{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&amp;count_bg=%23252A34&amp;title_bg=%23252A34&amp;icon=homebrew.svg&amp;icon_color=%23FFFFFF&amp;title=glasses&amp;edge_flat=false">
+              </span>
+              <!-- CUSTOM: Hits -->
+              
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
             </nav>
           </aside>
